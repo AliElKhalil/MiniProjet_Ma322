@@ -53,7 +53,7 @@ def Mat(a, b, K, f):
 
 def resolution(a,b,K,f):
     t,F,M=Mat(a,b,K,f)
-    U=np.linalg.solve(M,F)
+    U=np.linalg.solve(M,F) #Résolution du système MU=F
     return U,t
 
 def comparaison(a,b,K,f,V, figure=False):
@@ -67,16 +67,19 @@ def comparaison(a,b,K,f,V, figure=False):
         plt.title("Courbe des solutions de l'équation intégrable")
         plt.legend()
         plt.show()
-    #Norme=np.linalg.norm(U-Vtab)
+    Erreur=np.linalg.norm(U-Vtab)
+    return Erreur
     
 def K(x,t):
     return 2
 
 def f(x):
-    return np.cos(np.pi*x/2)-8/np.pi
+    return (np.cos(np.pi*x/2)-8/np.pi)
 
 a=-1
 b=1
 
 def V(x):
     return np.cos(np.pi*x/2)
+
+
