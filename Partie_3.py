@@ -93,6 +93,7 @@ def comparaison(a,b,K,f,V, figure=False, inf=False):
 
 if __name__ == '__main__':
     #sous-partie 3.2
+    print("Partie 3 : Equation intégrable.")
     print("Partie 3.2 : Présentation de benchmark utilisée")
     def K(x,t):
         return 2
