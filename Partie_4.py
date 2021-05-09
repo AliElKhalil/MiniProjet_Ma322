@@ -12,7 +12,7 @@ Classe et groupe : 3SC1
 Nom du fichier : Partie_4.py
 
 Description : fichier contenant le code pour la résolution de la partie 4 du 
-mini projet de Ma322 : équation intégrable.
+mini projet de Ma322 : Circuit RLC.
 
 """
 #-----------------------------------------------
