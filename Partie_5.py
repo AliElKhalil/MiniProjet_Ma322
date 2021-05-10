@@ -8,7 +8,7 @@ Prénom : Ali
 
 Classe et groupe : 3SC1
 
-Nom du fichier : Partie_4.py
+Nom du fichier : Partie_5.py
 
 Description : fichier contenant le code pour la résolution de la partie 5 du 
 mini projet de Ma322 : Moteur à Courant Continu (MCC).
@@ -124,10 +124,19 @@ def evolution_vitesse_angulaire(h,tin,tfi,figure=False):
     return der
     
     
-h=0.001
 tin=0
 tfi=80
-resolution_odeint(h,tin,tfi,figure=True)
-"""Runge_Kutta_4(h,tin,tfi,figure=True)
-evolution_vitesse_angulaire(h,tin,tfi,figure=True)
-CoupleMoteur(h,tin,tfi,figure=True)"""
+
+
+if __name__ == '__main__':
+    c=1
+    while(c==1): 
+        print("Partie 5 : Moteur Courant Continu.")
+        h=float(input("Saisir le pas souhaité : "))
+        Runge_Kutta_4(h,tin,tfi,figure=True)
+        resolution_odeint(h,tin,tfi,figure=True)
+        CoupleMoteur(h, tin, tfi,figure=True)
+        c=2
+        while(c!=1 and c!=0):
+            c=int(input("Voulez vous recommencer ? 1 si oui, 0 si non : "))
+    print("Fin de la partie 4., merci pour votre attention.")

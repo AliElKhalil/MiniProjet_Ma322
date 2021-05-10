@@ -103,7 +103,7 @@ if __name__ == '__main__':
     c=1
     while(c==1): 
         print("Partie 4 : circuit RLC.")
-        h=float0.001(input("Saisir le pas souhaité : "))
+        h=float(input("Saisir le pas souhaité : "))
         Runge_Kutta_4(h,t0,tf,figure=True)
         resolution_odeint(h,t0,tf,figure=True)
         c=2
