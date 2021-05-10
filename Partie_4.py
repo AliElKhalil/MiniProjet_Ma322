@@ -78,7 +78,7 @@ def Runge_Kutta_4(h,tin,tfi,figure=False):
         plt.xlabel("Temps (sec)")
         plt.ylabel("Intensité i (A)")
         plt.show()
-    return (Y_rk)
+    return (Y_rk,t)
 
 
 def resolution_odeint(h,tin,tfi,figure=False):
@@ -96,7 +96,7 @@ def resolution_odeint(h,tin,tfi,figure=False):
         plt.xlabel("Temps (sec)")
         plt.ylabel("Intensité i (A)")
         plt.show() 
-    return (Yode)
+    return (Yode,t)
     
 
 if __name__ == '__main__':
