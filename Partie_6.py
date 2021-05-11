@@ -80,5 +80,13 @@ def resolution_odeint(h,tin,tfi,figure=False):
     return (Yode,t)
 
 
-h=10**-4
-resolution_odeint(h,tin,tfi,figure=True)
+if __name__ == '__main__':
+    c=1
+    while(c==1): 
+        print("Partie 6 : Lancement d'une fusée.")
+        h=float(input("Saisir le pas souhaité : "))
+        resolution_odeint(h,tin,tfi,figure=True)
+        c=2
+        while(c!=1 and c!=0):
+            c=int(input("Voulez vous recommencer ? 1 si oui, 0 si non : "))
+    print("Fin de la partie 4., merci pour votre attention.")
