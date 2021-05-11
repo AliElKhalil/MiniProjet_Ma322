@@ -89,4 +89,4 @@ if __name__ == '__main__':
         c=2
         while(c!=1 and c!=0):
             c=int(input("Voulez vous recommencer ? 1 si oui, 0 si non : "))
-    print("Fin de la partie 4., merci pour votre attention.")
+    print("Fin de la partie 6., merci pour votre attention.")
